@@ -32,19 +32,21 @@
 <div class="wrap">
 
 <h1>Privacy Policy</h1>
-<p class="sub"><strong>Solo Traveler</strong> — by LimogiAI Solutions<br>Last updated 18 November 2026</p>
+<p class="sub"><strong>Solo Traveler</strong> — by LimogiAI Solutions<br>Last updated 19 November 2026</p>
 
 <p>Solo Traveler is a set of tools for travellers: a currency converter, an EMI and
 loan calculator, a QR code reader, a travel history, a place to keep your payment cards and travel
-documents, a visa stay counter, packing lists, things to do, a phrase book, a tip and price checker, a
+documents, a vault for passwords and PINs, a visa stay counter, packing lists, things to do, a phrase book, a tip and price checker, a
 world clock and plug guide, a trip journal and an expense tracker. It was built
 to work without knowing anything about you, and this policy explains exactly what that
 means.</p>
 
 <div class="box">
 <strong>In short:</strong> no account, no ads, no analytics of our own, no tracking. Everything you
-enter, including saved cards, stays on your phone. Saved cards are encrypted and never
-backed up, synced or sent anywhere. We do not collect, sell or share personal information.
+enter, including saved cards and the passwords in your Vault, stays on your phone. Saved cards
+and Vault entries are encrypted and never backed up, synced or sent anywhere (a Vault export
+file is made only when you choose to make one). We do not collect, sell or share personal
+information.
 </div>
 
 <h2>What the app does not do</h2>
@@ -55,8 +57,8 @@ backed up, synced or sent anywhere. We do not collect, sell or share personal in
   and text-reading tools in Notes and Translate send Google basic technical and usage information about themselves; see
   <a href="#translate">Translating</a>.)</li>
   <li>It does not collect, sell or share your personal information.</li>
-  <li>It does not send your card details, expenses, loan figures or scanned codes to us
-  or to anyone else.</li>
+  <li>It does not send your card details, Vault passwords and PINs, expenses, loan figures
+  or scanned codes to us or to anyone else.</li>
 </ul>
 
 <h2>What is stored on your phone</h2>
@@ -85,6 +87,7 @@ the following on your phone only:</p>
   <tr><td>The phrase book language you last chose</td><td>So it opens in that language</td></tr>
   <tr><td>Travel documents you add (see below)</td><td>So you have copies of your documents with you</td></tr>
   <tr><td>Cards you choose to save (see below)</td><td>So you have your card details to hand while travelling</td></tr>
+  <tr><td>Passwords, PINs and other secrets you save in the Vault (see below)</td><td>So you have them to hand, under hints only you understand</td></tr>
 </table>
 <p>None of this is sent to us. Uninstalling the app, or clearing its storage in your
 phone's settings, deletes it.</p>
@@ -97,9 +100,10 @@ and ticket files and your notes' voice recordings.
 The file is made on your phone and handed to your phone's share menu; it goes only where
 you choose to save or send it. It is <strong>not encrypted</strong> and contains copies of
 your documents and any medical details you entered, so keep it somewhere private. Saved
-cards are never included. Restoring reads a backup file you choose, on your phone
-only. <strong>Delete all data</strong> in Settings removes everything the app has stored,
-including saved cards and photos.</p>
+cards and your Vault are never included. Restoring reads a backup file you choose, on your
+phone only, and leaves saved cards and your Vault as they are. <strong>Delete all data</strong>
+in Settings removes everything the app has stored, including saved cards, your Vault and
+photos.</p>
 
 <h2>Tickets and boarding passes</h2>
 <p>In <strong>Trip plan</strong> you can attach e-tickets, boarding passes and booking
@@ -227,6 +231,43 @@ notes. This information:</p>
 <p>Anyone who can use your unlocked phone can open the app and view your saved cards, so
 keep a screen lock on your phone. You can edit or delete a saved card at any time.</p>
 
+<h2 id="vault">Vault</h2>
+<p>If you save something in the <strong>Vault</strong>, the app keeps what you enter: a hint
+of your choosing, a username, the password, PIN or other secret, an optional note, whether
+you marked it as a favourite, and when you last changed it. We suggest a hint rather than the
+real bank, app or website name, but what you type is up to you. This information:</p>
+<ul>
+  <li><strong>is stored encrypted on your phone only</strong>, in the same way as saved
+  cards: on Android with a key held in the phone's secure hardware (Android Keystore), and
+  on iPhone in the iOS Keychain, marked for this device only;</li>
+  <li><strong>is never backed up or synced</strong>, and is not in the app's backup file. If
+  you lose or replace your phone, your Vault cannot be recovered unless you made an export
+  file (below);</li>
+  <li><strong>is never sent anywhere</strong>, to us or to anyone else. The Vault makes no
+  internet connections;</li>
+  <li>opens only after your fingerprint, face or phone PIN, every time, and locks again
+  after a minute away from the app. Passwords and PINs stay hidden on screen until you tap
+  Show, and hide again after ten seconds. On Android, screenshots and screen recording are
+  blocked while the Vault is open.</li>
+</ul>
+<p><strong>Copying.</strong> When you copy a password or PIN, it goes to your phone's
+clipboard so you can paste it. On Android the app marks it as sensitive, so the system's
+copy preview and keyboards don't show it, and clears it from the clipboard after one minute
+unless you have copied something else since. On iPhone it is cleared after one minute while
+the app is running.</p>
+<p><strong>Export and import.</strong> Only if you choose <em>Export Vault</em>, the app makes
+one file with your Vault entries, encrypted on your phone (AES-256-GCM, with the key made
+from a passphrase you choose using PBKDF2-SHA256), and hands it to your phone's share menu;
+it goes only where you choose to save or send it. We never see your passphrase or the file,
+and a forgotten passphrase cannot be recovered. <em>Import from a file</em> reads a file you
+choose, on your phone only.</p>
+<p><strong>Hiding the tile.</strong> In Settings, "Hide the Vault tile" removes it from the
+home screen and from Search; turning it back on shows it again. Both ask for your
+fingerprint, face or phone PIN.</p>
+<p>Anyone who knows your phone's PIN and has your phone can open the Vault, as with any app
+protected by the phone's lock, so keep a strong screen lock. You can edit or delete an entry
+at any time.</p>
+
 <h2>Reading a card with NFC (Android)</h2>
 <p>On Android phones with NFC, you can fill in a card's number and expiry by holding the
 card against the phone. The app only reads; it does not make a payment, charge the card or
@@ -335,8 +376,8 @@ a city is built into the app (GeoNames, CC BY 4.0).</p>
 requests the app makes on its own.</p>
 
 <h2>Backups</h2>
-<p>On Android, the app is excluded from backups entirely. On iPhone, saved cards are never
-backed up (see above) and photos are excluded; your other app data (such as trips, plans
+<p>On Android, the app is excluded from backups entirely. On iPhone, saved cards and the
+Vault are never backed up (see above) and photos are excluded; your other app data (such as trips, plans
 and your medical card) may be included in your iPhone's own device backup, which Apple
 encrypts and which only you can restore.</p>
 
@@ -347,7 +388,7 @@ policies apply once you leave Solo Traveler.</p>
 
 <h2>Deleting your data</h2>
 <p>Everything the app keeps is on your phone, so you are always in control: delete a saved
-card in My cards, or uninstall the app or clear its storage and everything is gone. We hold
+card in My cards or an entry in the Vault, or uninstall the app or clear its storage and everything is gone. We hold
 nothing from the app that we could delete for you.</p>
 
 <h2>Children</h2>
